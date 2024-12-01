@@ -4,15 +4,15 @@ emailjs.init('7AxtOjHvPO2F4YwWM');
     event.preventDefault(); // Prevent the default form submission
 
     const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
     const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
     const templateParams = {
       name: name,
-      message: message,
       email: email,
+      message: message,
     };
-    
+
     console.log(templateParams);
 
     emailjs.send('service_eilt109', 'template_10wzwzv', templateParams)
